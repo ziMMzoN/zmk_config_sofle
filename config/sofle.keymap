@@ -13,7 +13,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default-QWERTY {
             // ------------------------------------------------------------------------------------------------------------
             // |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
             // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
@@ -71,13 +71,13 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_3 {
+        Colemak-DHm {
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3  &kp N4  &kp N5                         &kp N6    &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W     &kp F   &kp P   &kp B                          &kp J     &kp L   &kp U      &kp Y    &kp SEMI  &kp GRAVE
-&kp LALT   &kp A   &kp R     &kp S   &kp T   &kp G                          &kp M     &kp N   &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C   &kp D   &kp V    &trans       &trans   &kp K     &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                   &kp LGUI  &trans  &trans  &kp DEL  &kp SPACE    &kp RET  &kp BSPC  &trans  &trans     &trans
+&kp ESC    &kp N1  &kp N2    &kp N3     &kp N4  &kp N5                         &kp N6    &kp N7  &kp N8     &kp N9        &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W     &kp F      &kp P   &kp B                          &kp J     &kp L   &kp U      &kp Y         &kp SEMI  &kp GRAVE
+&kp LALT   &kp A   &kp R     &kp S      &kp T   &kp G                          &kp M     &kp N   &kp E      &kp I         &kp O     &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C      &kp D   &kp V    &trans       &trans   &kp K     &kp H   &kp COMMA  &kp DOT       &kp FSLH  &kp RSHFT
+                   &kp LGUI  &kp LCTRL  &mo 1   &kp DEL  &kp SPACE    &kp RET  &kp BSPC  &mo 2   &trans     &kp CAPSLOCK
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
